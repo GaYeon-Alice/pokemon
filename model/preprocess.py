@@ -31,7 +31,7 @@ class FeatureExtractor:
 
         # 이미지를 배열로 변환
         x = image.img_to_array(img)
-        x = np.expand_dims(x, axis = 0)     # 3차원으로 변환
+        x = np.expand_dims(x, axis = 0)
         x = preprocess_input(x)
 
         # 이미지 피처 추출
